@@ -1,0 +1,79 @@
+/* Reset CSS */
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background-color: #FFE8CC;
+}
+
+/* Standard text */
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    position: relative;
+    width: 1600px;
+    height: 3706px;
+}
+
+header {
+    position: absolute;
+    width: 1520px;
+    height: 922px;
+    left: 22px;
+    top: 131px;
+}
+
+header .nav1 {
+    width: 1400px;
+    height: 100px;
+}
+
+
+header .nav1 .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .nav1 .menu img {
+    width: 122.6px;
+    height: 100px;
+    padding-right: 112.4px;
+}
+
+header .nav1 .menu a {
+    color: #403B32;
+    margin-right: 48px;
+}
+
+header .nav1 .menu button {
+    box-sizing: border-box;
+    width: 127px;
+    height: 50px;
+    margin-left: calc(608px - 48px);
+
+    border: 1px solid #403B32;
+    border-radius: 10px;
+}
+
+header .nav1 .menu button:hover {
+    transition: .5s;
+    background: #F2D16D;
+}
+
+header .navigation .bar {
+    width: 70px;
+    height: 17px;
+    border: 2x solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.s1 {
+    border: 20px solid black;
+}
