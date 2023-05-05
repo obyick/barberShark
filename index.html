@@ -9,51 +9,142 @@
     <!-- CSS FOLDER IMPORT -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- FONT IMPORT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
     <!-- PAGE TITLE-->
     <title>barberShark</title>
 </head>
 
 <body>
-    <header id="header">
-        <div class="nav1">
-            <div class="menu">
-                <!-- IMPORT BARBER LOGO -->
-                <img src="img\barber_logo.png" alt="barbeiro logo">
-
-                <!-- MENU TEXT -->
-                <a href="#">Início</a>
-                <a href="#">Quem Somos</a>
-                <a href="#">Barbeiros</a>
-                <a href="#">Contato</a>
-
-                <!-- SIGN-IN BOX -->
-                <button type="submit" class="Sign-In">Entrar</button>
-            </div>
+    <header>
+        <div class="nav">
+            <img class="logo" src="./img/barber_logo.png" alt="barber logo">
+            <ul class="links">
+                <li>
+                    <a href="#">Início</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="#">Barbeiros</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
         </div>
-        <div class="slides">
-            <!-- RADIO OPTIONS -->
-            <input type="radio" title="slide1" name="slide" id="slide1" checked>
-            <input type="radio" title="slide2" name="slide" id="slide2">
-            <input type="radio" title="slide2" name="slide" id="slide3">
-
-            <!-- IMPORT IMAGES TO SLIDE -->
-            <div class="slide s1">
-                <img src="img\slide_header.png" alt="banner1">
-            </div>
-            <div class="slide s2">
-                <img src="img\slide_header.png" alt="banner1">
-            </div>
-            <div class="slide s3">
-                <img src="img\slide_header.png" alt="banner1">
-            </div>
-        </div>
-        <div class=" navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
+        <div class="btn">
+            <button class="theme">Modo Escuro</button>
+            <button class="sign-in">Entrar</button>
         </div>
     </header>
-    <script src="script.js"></script>
+
+    <footer>
+        <div class="top">
+            <div class="menu">
+                <img src="./img/barber_logo.png" alt="barber logo">
+                <h3 class="sign-up-text">
+                    Cadastre seu e-mail e receba todas as atualizações do seu <br> agendamento e promções atualizadas.
+                </h3>
+                <form class="sign-up">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email"></input>
+                    <button class="confirm-email-send" type="submit">Inscreva-se</button>
+                </form>
+            </div>
+            <div class="nav">
+                <div class="platform">
+                    <ul class="platform-links">
+                        <li>
+                            <h3>
+                                Plataforma
+                            </h3>
+                        </li>
+                        <li>
+                            <a href="#">Barbeiros</a>
+                        </li>
+                        <li>
+                            <a href="#">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="#">Agendamento</a>
+                        </li>
+                        <li>
+                            <a href="#">Local</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="questions">
+                    <ul class="questions-links">
+                        <li>
+                            <h3>
+                                Dúvidas
+                            </h3>
+                        </li>
+                        <li>
+                            <a href="#">Onde marcar horário?</a>
+                        </li>
+                        <li>
+                            <a href="#">Posso escolher a cerveja?</a>
+                        </li>
+                        <li>
+                            <a href="#">Quanto tempo demora?</a>
+                        </li>
+                        <li>
+                            <a href="#">Pode levar criança?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul class="contact-links">
+                        <li>
+                            <h3>
+                                Contato
+                            </h3>
+                        </li>
+                        <li>
+                            <a href="#">(84) 987799442</a>
+                        </li>
+                        <li>
+                            <a href="#">Av. Prudente de Morais, 392,<br>Petrópolis, Natal - RN, 59020-400</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="bot">
+            <h3 class="copyright">
+                © PIJ4AS 2000 - 2022. Todos direitos reservados
+            </h3>
+            <div class="social-icons">
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <img src="./img/insta_logo.png" alt="barber logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/wpp_logo.png" alt="barber logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/lnkdn_logo.png" alt="barber logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

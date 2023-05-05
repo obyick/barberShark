@@ -1,79 +1,183 @@
-/* Reset CSS */
+/* STANDARD CSS */
 * {
-    margin: 0 auto;
+    /* POSITIONS */
+    margin: 0;
     padding: 0;
     border: 0;
-    background-color: #FFE8CC;
-}
-
-/* Standard text */
-a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
 }
 
 body {
-    position: relative;
-    width: 1600px;
-    height: 3706px;
+    /* FONT CONTENT */
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+
+    /* COLORS */
+    background: linear-gradient(180deg, #FFE7CB 2.13%, rgba(253, 224, 190, 0) 100%);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
-    position: absolute;
-    width: 1520px;
-    height: 922px;
-    left: 22px;
-    top: 131px;
-}
-
-header .nav1 {
-    width: 1400px;
-    height: 100px;
-}
-
-
-header .nav1 .menu {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
 }
 
-header .nav1 .menu img {
-    width: 122.6px;
-    height: 100px;
-    padding-right: 112.4px;
-}
-
-header .nav1 .menu a {
+header a {
     color: #403B32;
-    margin-right: 48px;
+
 }
 
-header .nav1 .menu button {
-    box-sizing: border-box;
-    width: 127px;
-    height: 50px;
-    margin-left: calc(608px - 48px);
+header .nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
 
+.links {
+    display: flex;
+    gap: 50px;
+}
+
+.theme,
+.sign-in {
+    /* THEME AND SIGN-IN FONT CONTENT */
+    color: #403B32;
+
+    /* THEME AND SIGN-IN BORDER */
     border: 1px solid #403B32;
     border-radius: 10px;
+    padding: 10px 40px;
 }
 
-header .nav1 .menu button:hover {
-    transition: .5s;
-    background: #F2D16D;
-}
-
-header .navigation .bar {
-    width: 70px;
-    height: 17px;
-    border: 2x solid white;
-    margin: 6px;
-    border-radius: 5px;
+/* THEME TRANSITION */
+.theme:hover {
     cursor: pointer;
+    transition: .3s;
+    color: #F2D16D;
+    background-color: #403B32;
 }
 
-.s1 {
-    border: 20px solid black;
+/* SIGN-IN TRANSITION */
+.sign-in:hover {
+    cursor: pointer;
+    transition: .3s;
+    background-color: #F2D16D;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 80px;
+    background-color: #403B32;
+    gap: 85px;
+}
+
+footer .nav {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+footer .nav .platform .platform-links ul {
+    display: flex;
+    gap: 100px;
+}
+
+footer a {
+    color: #FFF;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    align-items: end;
+}
+
+.platform-links,
+.questions-links,
+.nav .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu img {
+    width: 122.6px;
+    height: 100px;
+}
+
+.menu {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sign-up-text {
+    font-size: 18px;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#email {
+    outline: none;
+    font-size: 18px;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #D99C52;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 35px;
+}
+
+.confirm-email-send {
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #D99C52;
+    border: 1px solid #D99C52;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 35px;
+}
+
+
+
+
+.bot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bot .copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bot ul {
+    display: flex;
+    gap: 35px;
+}
+
+.bot img {
+    width: 22px;
+    height: 22px;
 }
