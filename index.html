@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS FOLDER IMPORT -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/toggle-switch.css">
+    <link rel="stylesheet" type="text/css" href="./css/slide.css">
 
     <!-- FONT IMPORT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +26,8 @@
 <body>
     <header>
         <div class="nav">
-            <img class="logo" src="./img/barber_logo.png" alt="barber logo">
-            <ul class="links">
+            <img class="barber-logo" src="./img/barber_logo.png" alt="barber logo">
+            <ul class="nav-list">
                 <li>
                     <a href="#">Início</a>
                 </li>
@@ -41,20 +43,96 @@
             </ul>
         </div>
         <div class="btn">
-            <button class="theme">Modo Escuro</button>
+            <label class="switch">
+                <input type="checkbox" id="toggle" />
+                <span class="slider round"></span>
+            </label>
             <button class="sign-in">Entrar</button>
         </div>
     </header>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./img/slide1.png" style="width: 100%" />
+                <div class="text">
+                    <span class="text1">A melhor</span><br />
+                    <span class="text2">Barbearia de Natal</span><br />
+                    <span class="text3"><br />
+                        Na Dr Barbeiro você tem o melhor serviço e melhor atendimento
+                        <br />
+                        acompanhado de um chopp Heineken bem gelado! </span><br />
+                    <span class="text4">Agendar</span>
+                </div>
+            </div>
 
+            <div class="mySlides fade">
+                <img src="./img/slide2.png" style="width: 100%" />
+                <div class="text">
+                    <span class="text1">slider 2</span><br />
+                    <span class="text2">2 slider</span><br />
+                    <span class="text3">
+                        slider 2<br></span>
+                    <span class="text4">Agendar</span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./img/slide1.png" style="width: 100%" />
+                <div class="text">
+                    <span class="text1">slider 3</span><br />
+                    <span class="text2">3 slider</span><br />
+                    <span class="text3">
+                        slider 3<br></span>
+                    <span class="text4">Agendar</span>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center" class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <section class="sumary">
+            <span class="text1">Mais de 633 clientes satifeitos</span>
+            <span class="text2">
+                Eu escolhi a Dr. Barbeiro porque tem o ambiente muito agradável e os
+                barbeiros sempre são bem atensiosos
+            </span>
+            <p class="text3">Lucas Silva, 22 anos</p>
+        </section>
+
+        <section class="cardDemo">
+            <div class="card">
+                <img src="./img/card1.png" alt="" />
+                <p>Design de Barbas de acordo com o Rosto</p>
+            </div>
+            <div class="card">
+                <img src="./img/card2.png" alt="" />
+                <p>Cortes de cabelos atualizados</p>
+            </div>
+            <div class="card">
+                <img src="./img/card3.png" alt="" />
+                <p>Ambiente confortável</p>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="top">
             <div class="menu">
-                <img src="./img/barber_logo.png" alt="barber logo">
-                <h3 class="sign-up-text">
-                    Cadastre seu e-mail e receba todas as atualizações do seu <br> agendamento e promções atualizadas.
-                </h3>
+                <img class="barber-logo" src="./img/barber_logo.png" alt="barber logo">
+                <span class="sign-up-text">
+                    Cadastre seu e-mail e receba todas as atualizações do seu<br>agendamento e promções atualizadas.
+                </span>
                 <form class="sign-up">
-                    <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Email"></input>
                     <button class="confirm-email-send" type="submit">Inscreva-se</button>
                 </form>
@@ -63,9 +141,9 @@
                 <div class="platform">
                     <ul class="platform-links">
                         <li>
-                            <h3>
+                            <span>
                                 Plataforma
-                            </h3>
+                            </span>
                         </li>
                         <li>
                             <a href="#">Barbeiros</a>
@@ -84,9 +162,9 @@
                 <div class="questions">
                     <ul class="questions-links">
                         <li>
-                            <h3>
+                            <span>
                                 Dúvidas
-                            </h3>
+                            </span>
                         </li>
                         <li>
                             <a href="#">Onde marcar horário?</a>
@@ -105,9 +183,9 @@
                 <div class="contact">
                     <ul class="contact-links">
                         <li>
-                            <h3>
+                            <span>
                                 Contato
-                            </h3>
+                            </span>
                         </li>
                         <li>
                             <a href="#">(84) 987799442</a>
@@ -121,30 +199,32 @@
 
         </div>
         <div class="bot">
-            <h3 class="copyright">
+            <span class="copyright">
                 © PIJ4AS 2000 - 2022. Todos direitos reservados
-            </h3>
+            </span>
             <div class="social-icons">
                 <ul class="social">
                     <li>
                         <a href="#">
-                            <img src="./img/insta_logo.png" alt="barber logo">
+                            <img src="./img/insta_logo.png" alt="insta-logo">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/wpp_logo.png" alt="barber logo">
+                            <img src="./img/wpp_logo.png" alt="wpp-logo">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/lnkdn_logo.png" alt="barber logo">
+                            <img src="./img/lnkdn_logo.png" alt="lnkdn-logo">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="./js/slide.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
