@@ -2,31 +2,26 @@
 <html lang="en">
 
 <head>
-    <!-- METATAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS FOLDER IMPORT -->
+    <title>barberShark</title>
+
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/toggle-switch.css">
     <link rel="stylesheet" type="text/css" href="./css/slide.css">
 
-    <!-- FONT IMPORT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-
-    <!-- PAGE TITLE-->
-    <title>barberShark</title>
 </head>
 
 <body>
     <header>
         <div class="nav">
-            <img class="barber-logo" src="./img/barber_logo.png" alt="barber logo">
+            <img class="barber-logo" src="./img/logo_barber.png" alt="barber logo">
             <ul class="nav-list">
                 <li>
                     <a href="#">Início</a>
@@ -43,47 +38,45 @@
             </ul>
         </div>
         <div class="btn">
-            <label class="switch">
-                <input type="checkbox" id="toggle" />
-                <span class="slider round"></span>
-            </label>
+            <div class="theme">
+                <span class="dark">Tema</span>
+                <label class="switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <button class="sign-in">Entrar</button>
         </div>
     </header>
     <main>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="./img/slide1.png" style="width: 100%" />
+        <div class="slideshow">
+            <div class="slide fade">
+                <img class="s" src="./img/slide1.png" alt="slide1">
                 <div class="text">
-                    <span class="text1">A melhor</span><br />
-                    <span class="text2">Barbearia de Natal</span><br />
-                    <span class="text3"><br />
-                        Na Dr Barbeiro você tem o melhor serviço e melhor atendimento
-                        <br />
-                        acompanhado de um chopp Heineken bem gelado! </span><br />
-                    <span class="text4">Agendar</span>
+                    <span class="text1">A melhor</span><br>
+                    <span class="text2">Barbearia de Natal</span><br>
+                    <span class="text3">Na Dr Barbeiro você tem o melhor serviço e melhor atendimento<br>acompanhado de um chopp Heineken bem gelado! </span><br>
+                    <button class="schedule">Agendar</button>
                 </div>
             </div>
 
-            <div class="mySlides fade">
-                <img src="./img/slide2.png" style="width: 100%" />
+            <div class="slide fade">
+                <img class="s" src="./img/slide2.png" alt="slide2">
                 <div class="text">
-                    <span class="text1">slider 2</span><br />
-                    <span class="text2">2 slider</span><br />
-                    <span class="text3">
-                        slider 2<br></span>
-                    <span class="text4">Agendar</span>
+                    <span class="text1">A melhor</span><br>
+                    <span class="text2">Barbearia de Natal</span><br>
+                    <span class="text3">Na Dr Barbeiro você tem o melhor serviço e melhor atendimento<br>acompanhado de um chopp Heineken bem gelado! </span><br>
+                    <button class="schedule">Agendar</button>
                 </div>
             </div>
 
-            <div class="mySlides fade">
-                <img src="./img/slide1.png" style="width: 100%" />
+            <div class="slide fade">
+                <img class="s" src="./img/slide1.png" alt="slide3">
                 <div class="text">
-                    <span class="text1">slider 3</span><br />
-                    <span class="text2">3 slider</span><br />
-                    <span class="text3">
-                        slider 3<br></span>
-                    <span class="text4">Agendar</span>
+                    <span class="text1">A melhor</span><br>
+                    <span class="text2">Barbearia de Natal</span><br>
+                    <span class="text3">Na Dr Barbeiro você tem o melhor serviço e melhor atendimento<br>acompanhado de um chopp Heineken bem gelado! </span><br>
+                    <button class="schedule">Agendar</button>
                 </div>
             </div>
 
@@ -103,10 +96,7 @@
 
         <section class="sumary">
             <span class="text1">Mais de 633 clientes satifeitos</span>
-            <span class="text2">
-                Eu escolhi a Dr. Barbeiro porque tem o ambiente muito agradável e os
-                barbeiros sempre são bem atensiosos
-            </span>
+            <span class="text2">Eu escolhi a Dr. Barbeiro porque tem o ambiente muito agradável e os barbeiros sempre são bem atensiosos</span>
             <p class="text3">Lucas Silva, 22 anos</p>
         </section>
 
@@ -128,7 +118,7 @@
     <footer>
         <div class="top">
             <div class="menu">
-                <img class="barber-logo" src="./img/barber_logo.png" alt="barber logo">
+                <img class="barber-logo" src="./img/logo_barber.png" alt="barber logo">
                 <span class="sign-up-text">
                     Cadastre seu e-mail e receba todas as atualizações do seu<br>agendamento e promções atualizadas.
                 </span>
@@ -206,17 +196,17 @@
                 <ul class="social">
                     <li>
                         <a href="#">
-                            <img src="./img/insta_logo.png" alt="insta-logo">
+                            <img src="./img/logo_insta.png" alt="insta-logo">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/wpp_logo.png" alt="wpp-logo">
+                            <img src="./img/logo_wpp.png" alt="wpp-logo">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/lnkdn_logo.png" alt="lnkdn-logo">
+                            <img src="./img/logo_lnkdn.png" alt="lnkdn-logo">
                         </a>
                     </li>
                 </ul>

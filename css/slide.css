@@ -1,18 +1,12 @@
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1520px;
-  height: 720px;
+.slideshow {
   position: relative;
-  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 /* Hide the images by default */
-.mySlides {
+.slide {
   display: none;
 }
 
@@ -142,4 +136,24 @@
   to {
     opacity: 1;
   }
+}
+
+.s {
+  width: 100%;
+}
+
+.schedule {
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #403b32;
+  background-color: #ffcc8f;
+  border: 1px solid #ffffff;
+  margin-top: 30px;
+  padding: 10px 40px;
+}
+
+.schedule:hover {
+  background-color: #ffffff;
+  color: #403b32;
 }
